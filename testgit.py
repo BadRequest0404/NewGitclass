@@ -1,2 +1,2 @@
 print("Hello World from testgit.py")
-print("Hello World from git")
+print("Hello World from github")

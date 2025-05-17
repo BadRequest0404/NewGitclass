@@ -1,0 +1,17 @@
+name: my action
+description: "This is my first action"
+
+inputs:
+  message:
+    description: "The message to greet"
+    required: true
+    default: "Hello, World!"
+
+runs:
+    using: "composite"
+
+    steps:
+      - name: hello world
+        run: echo "Hello, ${{ inputs.message }}"
+        shell: bash
+
